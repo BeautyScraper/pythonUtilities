@@ -3,6 +3,7 @@ import sys
 
 
 def batchGen(batchLine):
+    """for producing generated urls with different numbers"""
     genString = []
     if re.search("\[.*?\]", batchLine):
         withinBrackets = re.search("\[(.*?)\]", batchLine)[1]
